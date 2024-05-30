@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>PrismaCursor</title>
+</head>
+
+<body>
+  <section>
+    <h1 class="prisma" data-magnetic-ease="elastic" data-magnetic-intencity="4" data-magnetic data-scale="5" data-mix-blend-mode="difference">awwards</h1>
+  </section>
+  <section></section>
+  <script src="./PrismaCursor.js"></script>
+  <script src="./gsap.min.js"></script>
+  <script>
+    const prismaCursor = new PrismaCursor();
+    prismaCursor.addCursor({
+      background: 'rgb(255,255,255)',
+      borderRadius: '50%',
+      width: '2rem',
+      height: '2rem',
+      opacity: '0'
+    },1);
+    prismaCursor.addStyles({ opacity: 0 })
+    prismaCursor.addHover();
+    prismaCursor.addText({ fontFamily: 'Gabarito' });
+  </script>
+</body>
+
+</html>
